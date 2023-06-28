@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -10,21 +12,21 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
+
+<a name="about-the-project"></a>
 ## О проекте
 
 Добро пожаловать на проект "OCR для общества доноров крови". Цель проекта - разработать для общества доноров крови алгоритм автоматического распознавания текста из табличных данных, снятых с помощью фотографии. Мы в проекте используется OCR (Optical Character Recognition) - технология для извлечения информации из изображений.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- BUILD WITH -->
+<a name="built-with"></a>
 ### Используемые библиотеки
 
 TBA
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- INSTALLATION -->
 ### Установка
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
@@ -43,16 +45,17 @@ _Below is an example of how you can instruct your audience on installing and set
    const API_KEY = 'ENTER YOUR API';
    ```
 
+<a name="installation"></a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE -->
+<a name="usage"></a>
 ## Применение
 
 TBA
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
+<a name="roadmap"></a>
 ## Roadmap
 
 - [ ] Выделение таблицы
