@@ -27,6 +27,7 @@ TBA
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="installation"></a>
 ### Установка
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
@@ -45,7 +46,6 @@ _Below is an example of how you can instruct your audience on installing and set
    const API_KEY = 'ENTER YOUR API';
    ```
 
-<a name="installation"></a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="usage"></a>
