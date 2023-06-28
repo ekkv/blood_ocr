@@ -11,7 +11,6 @@
     <li>
       <a href="#getting-started">Как использовать</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -23,7 +22,7 @@
 
 
 <!-- О проекте -->
-## About The Project
+## О проекте
 
 Привет! Добро пожаловать на проект "OCR для общества доноров крови". Цель проекта - разработать для общества доноров крови алгоритм автоматического распознавания текста из табличных данных, снятых с помощью фотографии. Мы в проекте используется OCR (Optical Character Recognition) - технология для извлечения информации из изображений.
 
@@ -31,7 +30,7 @@
 
 
 <!-- Используемые библиотеки -->
-### Built With
+### Используемые библиотеки
 
 TBA
 
@@ -40,19 +39,11 @@ TBA
 
 
 <!-- Как использовать -->
-## Getting Started
+## Как использовать
 
 TBA
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
+### Установка
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
@@ -75,7 +66,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- Применение -->
-## Usage
+## Применение
 
 TBA
 
