@@ -2,47 +2,30 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">О проекте</a>
-      <ul>
-        <li><a href="#built-with">Используемые библиотеки</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Как использовать</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#about-the-project">О проекте</a></li>
+    <li><a href="#built-with">Используемые библиотеки</a></li>
+    <li><a href="#installation">Установка</a></li>
+    <li><a href="#usage">Применение</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
   </ol>
 </details>
 
-
-
-<!-- О проекте -->
+<!-- about-the-project -->
 ## О проекте
 
 Привет! Добро пожаловать на проект "OCR для общества доноров крови". Цель проекта - разработать для общества доноров крови алгоритм автоматического распознавания текста из табличных данных, снятых с помощью фотографии. Мы в проекте используется OCR (Optical Character Recognition) - технология для извлечения информации из изображений.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- Используемые библиотеки -->
+<!-- built-with -->
 ### Используемые библиотеки
 
 TBA
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- Как использовать -->
 ## Как использовать
 
 TBA
 
+<!-- installation -->
 ### Установка
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
@@ -65,12 +48,10 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-<!-- Применение -->
+<!-- usage -->
 ## Применение
 
 TBA
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -82,8 +63,6 @@ TBA
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
