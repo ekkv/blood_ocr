@@ -10,17 +10,17 @@
   </ol>
 </details>
 
-<!-- about-the-project -->
+<!-- ABOUT THE PROJECT -->
 ## О проекте
 
 Добро пожаловать на проект "OCR для общества доноров крови". Цель проекта - разработать для общества доноров крови алгоритм автоматического распознавания текста из табличных данных, снятых с помощью фотографии. Мы в проекте используется OCR (Optical Character Recognition) - технология для извлечения информации из изображений.
 
-<!-- built-with -->
+<!-- BUILD WITH -->
 ### Используемые библиотеки
 
 TBA
 
-<!-- installation -->
+<!-- INSTALLATION -->
 ### Установка
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
@@ -39,7 +39,7 @@ _Below is an example of how you can instruct your audience on installing and set
    const API_KEY = 'ENTER YOUR API';
    ```
 
-<!-- usage -->
+<!-- USAGE -->
 ## Применение
 
 TBA
