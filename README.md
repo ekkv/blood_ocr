@@ -8,7 +8,6 @@
     <li><a href="#built-with">Используемые библиотеки</a></li>
     <li><a href="#installation">Установка</a></li>
     <li><a href="#usage">Применение</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
   </ol>
 </details>
 
@@ -40,14 +39,6 @@ TBA
 TBA
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<a name="roadmap"></a>
-## Roadmap
-
-- [ ] Выделение таблицы
-- [ ] Распознавание текста
-- [ ] Повышение точности
-- [ ] Дооформление
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
