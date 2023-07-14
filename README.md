@@ -15,27 +15,23 @@
 <a name="about-the-project"></a>
 ## О проекте
 
-Добро пожаловать на проект "OCR для общества доноров крови". Цель проекта - разработать для общества доноров крови алгоритм автоматического распознавания текста из табличных данных, снятых с помощью фотографии. Мы в проекте используется OCR (Optical Character Recognition) - технология для извлечения информации из изображений.
+Страница OCR-решения для общества доноров крови “DonorSearch”. Алгоритм автоматического распознавания текста из табличных данных с фотографий справок. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="built-with"></a>
 ### Используемые библиотеки
 
-TBA
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<a name="installation"></a>
-### Установка
-
-TBA
+- EasyOCR
+- Opencv-python
+- Pandas
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="usage"></a>
 ## Применение
-
-TBA
+1) git clone https://github.com/ekkv/donation_ocr.git
+2) pip install requirements.txt
+3) cmd/conda prompt: !python main-test.py путь/до/фото
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
