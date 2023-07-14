@@ -22,9 +22,9 @@
 <a name="built-with"></a>
 ### Используемые библиотеки
 
-EasyOCR
-Opencv-python
-Pandas
+- EasyOCR
+- Opencv-python
+- Pandas
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
