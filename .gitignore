@@ -17,6 +17,7 @@ Thumbs.db
 
 # Folders #
 ###########
+__pycache__/
 datasets/
 results/
 

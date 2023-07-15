@@ -1,5 +1,5 @@
-pip install pandas
-pip install opencv-python<=4.8
-pip install matplotlib
-pip install Pillow==9.5.0
-pip install easyocr
+pandas
+opencv-python<=4.8
+matplotlib
+Pillow==9.5.0
+easyocr
