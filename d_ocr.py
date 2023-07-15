@@ -13,7 +13,7 @@ from easyocr import Reader
 
 class donation_ocr():
     # инициализация модели и переменных
-    def __init__(self):
+    def __init__(self, cut=True):
         self.reader = Reader(['ru'])
         self.date_r = re.compile('^(0[1-9]|[12][0-9]|3[01])[- /.|,| |-](0[1-9]|1[012])[- /.|,| |-](19|20)\d\d$')
         self.bt_pattern = r'[\{\(\[]([^()\[\]]*?)[\)\]\}]'
@@ -24,6 +24,7 @@ class donation_ocr():
             'л': 'Плазма',
             'ц': 'Тромбоциты'
         }
+        self.cut = cut
 
     # предсказание на основе easyocr
     def predict(self, image):
@@ -33,9 +34,10 @@ class donation_ocr():
 
         # открыть изображение, обрезать и распознать текст
         im = imread(image)
-        height, width, channels = im.shape
-        hei = int(height / 2)
-        im = im[hei: height, 0:width]
+        if self.cut:
+            height, width, channels = im.shape
+            hei = int(height / 2)
+            im = im[hei: height, 0:width]
         result = self.reader.readtext(im)
 
         # вытащить из результата ocr даты, виды и типы донаций
@@ -73,8 +75,8 @@ class donation_ocr():
             bloods.append(bl.strip(' '))
 
         # переименовать виды и типы донации
-        is_found = False
         for i in range(len(bloods)):
+            is_found = False
             for key in self.bloodsdict.keys():
                 if key in bloods[i]:
                     bloods[i] = self.bloodsdict[key]
@@ -105,18 +107,17 @@ class donation_ocr():
             df_pred.loc[i, 'Дата донации'] = dates[i]
             df_pred.loc[i, 'Тип донации'] = types[i]
             
-        else:    
-            df_pred['Дата донации'] = pd.to_datetime(df_pred['Дата донации'], dayfirst=True)
-            df_pred.drop_duplicates(subset=['Дата донации'], keep='last', inplace=True, ignore_index=True) # удалить дубликаты по дате
-            df_pred.sort_values(by=['Дата донации'], inplace=True, ignore_index=True)
-            df_pred['Дата донации'] = df_pred['Дата донации'].dt.strftime('%d.%m.%Y')
-            df_pred['Дата донации'] = df_pred['Дата донации'].astype('str')
+        df_pred['Дата донации'] = pd.to_datetime(df_pred['Дата донации'], dayfirst=True)
+        df_pred.drop_duplicates(subset=['Дата донации'], keep='last', inplace=True, ignore_index=True) # удалить дубликаты по дате
+        df_pred.sort_values(by=['Дата донации'], inplace=True, ignore_index=True)
+        df_pred['Дата донации'] = df_pred['Дата донации'].dt.strftime('%d.%m.%Y')
+        df_pred['Дата донации'] = df_pred['Дата донации'].astype('str')
 
-            save_path = Path('results/')
-            if save_path.exists():
-                df_pred.to_csv(str(save_path) + '/' + Path(image).stem + '.csv', columns=df_pred.columns)
-            else:
-                save_path.mkdir()
-                df_pred.to_csv(str(save_path) + '/' + Path(image).stem + '.csv', columns=df_pred.columns)
+        save_path = Path('results/')
+        if save_path.exists():
+            df_pred.to_csv(str(save_path) + '/' + Path(image).stem + '.csv', columns=df_pred.columns)
+        else:
+            save_path.mkdir()
+            df_pred.to_csv(str(save_path) + '/' + Path(image).stem + '.csv', columns=df_pred.columns)
 
-            return df_pred
+        return df_pred
