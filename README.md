@@ -31,7 +31,7 @@
 <a name="usage"></a>
 ## Применение
 1) git clone https://github.com/ekkv/donation_ocr.git
-2) pip install requirements.txt
+2) pip install -r requirements.txt
 3) cmd/conda prompt: !python main-test.py путь/до/фото
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
