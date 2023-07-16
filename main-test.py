@@ -12,7 +12,7 @@ from d_ocr import donation_ocr
 
 def main():
     try:
-        image = sys.argv[1]
+        im = sys.argv[1]
     except: 
         print('Не указано изображение')
     try:
@@ -20,7 +20,7 @@ def main():
     except:
         print('Не удалось загрузить d_ocr.py')
     try:
-        df_pred = ocr.predict(image)
+        df_pred = ocr.predict(im)
         print('Распознавание прошло успешно')
     except:
         print('Распознавание не удалось')
