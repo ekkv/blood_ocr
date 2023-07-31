@@ -25,6 +25,8 @@
 - EasyOCR
 - Opencv-python
 - Pandas
+- FastAPI
+- Uvicorn
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
