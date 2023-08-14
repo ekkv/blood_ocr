@@ -40,6 +40,6 @@
 - docker:
 1) git clone
 2) cd donation_ocr
-3) cmd: docker build .
+3) cmd: docker build -t donation_ocr .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
