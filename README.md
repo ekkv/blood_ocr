@@ -25,6 +25,8 @@
 - EasyOCR
 - Opencv-python
 - Pandas
+- FastAPI
+- Uvicorn
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -38,6 +40,6 @@
 - docker:
 1) git clone
 2) cd donation_ocr
-3) cmd: docker build -f d_ocr_env .
+3) cmd: docker build -t donation_ocr .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
