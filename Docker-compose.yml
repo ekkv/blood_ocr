@@ -1,14 +1,26 @@
-version: "3.8"
 services:
- web:
-  build: context: .
-  dockerfile: Dockerfile
-  restart: always
-  ports:
-   - "8000:8000"
-  depends_on:
-   - redis
- redis:
-  image: redis:alpine
-  ports:
-   - "6379:6379"
+  app:
+    build: .
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - data:/storage
+    depends_on:
+     - redis
+  celery: 
+    build: .
+    restart: always
+    volumes:
+      - data:/storage
+    entrypoint: celery -A tasks worker -l Info -P eventlet
+  redis:
+    image: redis:alpine
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - data:/storage
+
+volumes:
+  data:

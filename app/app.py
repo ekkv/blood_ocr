@@ -23,7 +23,7 @@ async def process(file: UploadFile):
     # загрузить картинку
     img_id = str(uuid.uuid4())
     img = Image.open(file.file)
-    img.save(f"./storage/{img_id}.png")
+    img.save(f"/storage/{img_id}.png")
     task_id = process_image.apply_async(args=[img_id])
     return {'task_id': str(task_id), 'status': 'Processing'}
 
@@ -31,11 +31,12 @@ async def process(file: UploadFile):
 @app.get("/ocr/result/{task_id}", status_code=200,
          responses={202: {'description': 'Accepted: Not Ready'}})
 async def get_status(task_id):
+    # проверка статуса
     task_result = AsyncResult(task_id)
     if not task_result.ready():
         return JSONResponse(status_code=202, content={'task_id': str(task_id), 'status': 'Processing'})
     result, img_id = task_result.get()
-    os.remove(f"./storage/{img_id}.png")
+    os.remove(f"/storage/{img_id}.png")
     return {'task_id': task_id, 'status': 'Success', 'Result': result}
 
 

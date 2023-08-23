@@ -30,7 +30,7 @@ class donation_ocr():
 
     # предсказание на основе easyocr
     def predict(self, img_id):
-        image = cv2.imread(f"./storage/{img_id}.png")
+        image = cv2.imread(f"/storage/{img_id}.png")
         # открыть изображение, обрезать и распознать текст
         if self.cut:
             height, width, channels = image.shape

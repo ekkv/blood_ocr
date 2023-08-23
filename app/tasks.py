@@ -3,10 +3,11 @@
 import logging
 from celery import Celery, Task
 
+from redis import Redis
 from d_ocr import donation_ocr
 
 
-redis_conn = 'redis://localhost:6379'
+redis_conn = 'redis://redis:6379'
 
 worker = Celery('work',
                 broker=redis_conn,
