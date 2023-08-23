@@ -27,19 +27,16 @@
 - Pandas
 - FastAPI
 - Uvicorn
+- Celery
+
+Для бэкенда используется docker image Redis:alpine
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="usage"></a>
 ## Применение
-- cmd/conda prompt:
 1) git clone https://github.com/ekkv/donation_ocr.git
-2) pip install -r requirements.txt
-3) python main-test.py путь/до/фото
-4) for notebook/lab: !python main-test.py путь/до/фото
-- docker:
-1) git clone
-2) cd donation_ocr
+2) cmd: cd donation_ocr
 3) cmd: docker compose up
 4) Пример запроса: curl -X POST -F file=@file.jpg http://localhost:8000/ocr/upload
 
