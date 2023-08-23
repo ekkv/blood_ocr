@@ -18,6 +18,7 @@ Thumbs.db
 # Folders #
 ###########
 __pycache__/
+.idea/
 datasets/
 results/
 
