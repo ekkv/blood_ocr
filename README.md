@@ -29,7 +29,7 @@
 - Uvicorn
 - Celery
 
-Для бэкенда используется docker image Redis:alpine
+Для бэкенда используется docker-образ Redis:alpine
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
