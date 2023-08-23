@@ -13,7 +13,7 @@ services:
     restart: always
     volumes:
       - data:/storage
-    entrypoint: celery -A tasks worker -l Info -P eventlet
+    entrypoint: bash init_celery.sh
   redis:
     image: redis:alpine
     restart: always

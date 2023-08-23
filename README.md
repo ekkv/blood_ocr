@@ -40,6 +40,7 @@
 - docker:
 1) git clone
 2) cd donation_ocr
-3) cmd: docker build -t donation_ocr .
+3) cmd: docker compose up
+4) Пример запроса: curl -X POST -F file=@file.jpg http://localhost:8000/ocr/upload
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
